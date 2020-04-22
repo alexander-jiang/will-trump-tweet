@@ -30,11 +30,11 @@ print(oauth_session.fetch_access_token(access_token_url))
 # You can now use the oauth_session object to make OAuth requests.
 
 before_this_tweet_id = "1212181341078458368" # NOTE that "max_id" is an inclusive parameter!
-after_this_tweet_id = "" # NOTE that "sinnce_id" is not inclusive!
+after_this_tweet_id = "" # NOTE that "since_id" is not inclusive!
 twitter_handle = "realDonaldTrump"
 tweets_per_request = 200 # max is 200 per request
 
-num_batches = 30
+num_batches = 20 # this API endpoint only exposes the past 3200 tweets
 for batch_num in range(num_batches):
     print(f"==== BATCH {batch_num+1} OF {num_batches} ====")
     api_url = f"https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name={twitter_handle}&count={tweets_per_request}&include_rts=true&trim_user=1"
