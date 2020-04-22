@@ -2,3 +2,5 @@ requests-oauthlib
 matplotlib
 numpy
 pytz
+pandas
+statsmodels

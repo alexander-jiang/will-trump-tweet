@@ -6,3 +6,6 @@ realDonaldTrump_tweets/*
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
