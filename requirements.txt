@@ -1,0 +1,4 @@
+requests-oauthlib
+matplotlib
+numpy
+pytz
