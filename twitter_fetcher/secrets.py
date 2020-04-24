@@ -11,6 +11,7 @@ class Secrets():
             self.CONSUMER_API_SECRET_KEY = secrets["CONSUMER_API_SECRET_KEY"]
             self.ACCESS_TOKEN = secrets["ACCESS_TOKEN"]
             self.ACCESS_TOKEN_SECRET = secrets["ACCESS_TOKEN_SECRET"]
+            self.BEARER_TOKEN = secrets["BEARER_TOKEN"]
 
     def get_consumer_api_key(self):
         return self.CONSUMER_API_KEY
@@ -23,3 +24,6 @@ class Secrets():
 
     def get_access_token_secret(self):
         return self.ACCESS_TOKEN_SECRET
+
+    def get_bearer_token(self):
+        return self.BEARER_TOKEN
