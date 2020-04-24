@@ -10,7 +10,7 @@ from twitter_fetcher.tweet_features import TweetFeatures
 
 eastern_tz = pytz.timezone('US/Eastern')
 
-csv_out_filename = "realDonaldTrump_tweets/features.csv"
+csv_out_filename = "features.csv"
 csvfile = open(csv_out_filename, "w", newline='', encoding="utf8")
 csv_writer = csv.DictWriter(csvfile, fieldnames=TweetFeatures.get_field_names(), quoting=csv.QUOTE_NONNUMERIC)
 csv_writer.writeheader()
