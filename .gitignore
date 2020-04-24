@@ -1,6 +1,6 @@
 secrets/*
 realDonaldTrump_tweets/*
-
+pipeline_RDT_tweets/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
