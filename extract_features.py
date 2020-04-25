@@ -49,3 +49,15 @@ class FeatureExtractor():
 
         csvfile.close()
         print(f"extracted features for {total_num_tweets} tweets to {csv_out_filename}")
+
+def main():
+    tweet_filenames = []
+    tweet_filenames.append("master_full_tweets.json")
+
+    output_filename = "master_features.csv"
+
+    feature_extractor = FeatureExtractor()
+    feature_extractor.extract_features(tweet_filenames, output_filename)
+
+if __name__ == "__main__":
+    main()

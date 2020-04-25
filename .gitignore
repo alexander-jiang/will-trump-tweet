@@ -1,6 +1,9 @@
 secrets/*
 realDonaldTrump_tweets/*
 pipeline_RDT_tweets/*
+premium_RDT_tweets/*
+master_full_tweets.json
+master_features.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
