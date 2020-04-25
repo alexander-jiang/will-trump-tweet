@@ -13,6 +13,9 @@ class TweetFeatures:
         self.source = tweet_json['source']
         self.is_retweet = 'retweeted_status' in tweet_json
         self.text_len = len(tweet_json['text'])
+        self.text = tweet_json['text']
+        self.favorite = tweet_json['favorite_count']
+        self.retweets = tweet_json['reteweet_count'}
 
     # List of field names (used for CSV header)
     @classmethod
