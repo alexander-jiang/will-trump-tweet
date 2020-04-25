@@ -4,7 +4,7 @@ import os
 class Secrets():
     def __init__(self):
         secrets_path = os.path.join(os.path.dirname(__file__), "../secrets/twitter_api_secrets.json")
-        print(secrets_path)
+        # print(secrets_path)
         with open(secrets_path, "r") as f:
             secrets = json.load(f)
             self.CONSUMER_API_KEY = secrets["CONSUMER_API_KEY"]

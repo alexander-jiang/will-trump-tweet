@@ -108,6 +108,7 @@ class TwitterFetcher():
             if num_tweets > 0:
                 all_tweets.extend(batch_tweets)
 
+                # TODO refactor: this code is duplicated with the code in TwitterPremiumSearchFetcher
                 newest_tweet_id = batch_tweets[0]['id']
                 newest_tweet_time = batch_tweets[0]['created_at']
                 oldest_tweet_id = batch_tweets[-1]['id']
