@@ -54,7 +54,7 @@ def main():
     tweet_filenames = []
     tweet_filenames.append("master_full_tweets.json")
 
-    output_filename = "master_features.csv"
+    output_filename = "master_features_v2.csv"
 
     feature_extractor = FeatureExtractor()
     feature_extractor.extract_features(tweet_filenames, output_filename)
